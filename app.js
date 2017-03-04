@@ -1,3 +1,8 @@
+// have JQuery make sure the page loads prior to script running
+$(document).ready(function(){
+    
+});
+
 //////////////////////////////
 // Budget Controller Module //
 //////////////////////////////
