@@ -165,6 +165,12 @@ var UIController = (function () {
               
         },
         
+        deleteListItem: function (selectorID) {
+            var el;
+            el = document.getElementById(selectorID);
+            el.parentNode.removeChild(el);
+        },
+        
         // I have no idea what I'm doing here
         clearFields: function () {
             var fields, fieldsArr;
@@ -264,8 +270,10 @@ var controller = (function (budgetCtrl, UICtrl) {
             budgetCtrl.deleteItem(type, ID);
             
             // 2. delete item from ID
+            UICtrl.deleteListItem(itemID);
             
             // 3. update and display new budget
+            updateBudget();
         }
         
     };
