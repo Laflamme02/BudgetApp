@@ -1,0 +1,23 @@
+{
+  "name": "BudgetApp",
+  "version": "0.2.0",
+  "description": "Budget app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Chris Laflamme",
+  "contributors": [],
+  "license": ""
+}
